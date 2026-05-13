@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Arthur Kleber</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Arthur Kleber</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Tecnologias</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="text">
+            <h2>Olá, eu sou Arthur Kleber 👋</h2>
+
+            <p>
+                Sou estudante e desenvolvedor front-end apaixonado por tecnologia,
+                design e criação de interfaces modernas.
+                Atualmente estou aprendendo HTML, CSS, JavaScript e React,
+                buscando evoluir cada vez mais na programação.
+            </p>
+
+            <button>Meu Portfólio</button>
+        </div>
+
+        <div class="image">
+            <img src="image.png" alt="Foto Arthur Kleber">
+        </div>
+    </main>
+
+    <!-- TECNOLOGIAS -->
+    <section class="tech">
+        <h2>Minhas Tecnologias</h2>
+
+        <div class="tech-grid">
+
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                <p>HTML5</p>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                <p>CSS3</p>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                <p>JavaScript</p>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+                <p>React</p>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+                <p>Python</p>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+                <p>GitHub</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Arthur Kleber - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
+
+Css
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+
+    background-color: #0f172a;
+    color: white;
+
+    position: sticky;
+    top: 0;
+}
+
+header h1{
+    font-size: 28px;
+    color: #38bdf8;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #38bdf8;
+}
+
+/* MAIN */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    padding: 80px 60px;
+    min-height: 90vh;
+}
+
+/* TEXTO */
+.text{
+    max-width: 550px;
+}
+
+.text h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.text p{
+    font-size: 19px;
+    line-height: 1.7;
+    color: #475569;
+    margin-bottom: 25px;
+}
+
+/* BOTÃO */
+.text button{
+    padding: 14px 28px;
+    border: none;
+    border-radius: 12px;
+
+    background-color: #38bdf8;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.text button:hover{
+    background-color: #0ea5e9;
+    transform: scale(1.05);
+}
+
+/* IMAGEM */
+.image img{
+    width: 330px;
+    height: 330px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    border: 5px solid #38bdf8;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* TECNOLOGIAS */
+.tech{
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.tech h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.tech-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 30px;
+}
+
+.tech-card{
+    background-color: white;
+
+    padding: 30px 20px;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.tech-card:hover{
+    transform: translateY(-10px);
+}
+
+.tech-card img{
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+.tech-card p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer{
+    background-color: #0f172a;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
